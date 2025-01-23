@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input</h1>
+    <p>Ingrese 2 numeros:</p>
+    <input type="text" id="numero1">
+    <br>
+    <input type="text" id="numero2">
+    <br>
+    <button onclick="sum()">click</button>
+
+<script>
+    function sum() {
+    let x1 = document.getElementById("numero1").value;
+    let x2 = document.getElementById("numero2").value;
+    let resul = parseInt(x1) + parseInt(x2);
+    alert(resul);
+}
+
+
+</script>
+    <!-- <script src="03-functions.js"></script> -->
+</body>
+</html>

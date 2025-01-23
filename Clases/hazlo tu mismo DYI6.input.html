@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid green
+    }
+</style>
+
+<body>
+    <!-- Configura un div con un id llamado myDiv
+    Agrega al div los atributos css siguientes, usyo una clase llamada box:
+    width : 200px
+    height : 200px
+    border : 1px solid green
+    Escribe una función llamada selectBackColor que tome un color de fondo del usuario y pinte el fondo del div en el color que el usuario eligió
+    Escribe una función llamada selectTextColor que tome un color de texto del usuario y coloree el texto del div del color que el usuario eligió
+    Llama a las funciones usyo dos botones distintos. Un botón para seleccionar el color del fondo y el segundo botón para seleccionar el color de texto. -->
+
+
+    <h2>Ingresar colores</h2>
+    <div id="myDiv" class="box">background-color: white
+    <p id="myColor"> text-color: black</p>
+    </div>
+    <br>
+    <button onclick="selectBackColor()">Click para cambiar color de fondo</button>
+    <button onclick="selectTextColor()">Click para cambiar el color del texto</button>
+    
+    <script>
+    let selectBackColor = () => {
+        let backColor = prompt("blue, pink, aqua, purple, green ");
+        document.getElementById("myDiv").innerHTML = " Background-color: " + backColor;
+        document.getElementById("myDiv").style.backgroundColor = backColor;
+    } 
+        let selectTextColor = () => {
+        let textColor = prompt("blue, pink, aqua, purple, green, white ");
+        document.getElementById("myDiv").innerHTML = " text-color: " + textColor;
+        document.getElementById("myDiv").style.color = textColor;
+        }
+    
+</script>
+</body>
+    
+
+</html>

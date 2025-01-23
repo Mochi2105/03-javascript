@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+<!-- Escribe una función que reciba del usuario los detalles de su ciudad en la variable city, y el nombre de su país en la variable country
+Muestra los detalles en una alerta
+Muestra los detalles en un párrafo con un id llamado “myp” usyo getElementById.
+Llama a las funciones al presionar un botón. -->
+
+<h1>Ciudad y país</h1>
+<p id="myp"></p>
+<button onclick="residencia()">Click me</button>
+
+<script>
+let residencia = () => {
+    let city= prompt("Ingrese la ciudad");
+    let country= prompt("Ingrese el país");
+    let land = "Lugar de residencia:  " + city + " - " + country;
+        alert(land);
+        document.getElementById("myp").innerHTML=land;
+        }
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

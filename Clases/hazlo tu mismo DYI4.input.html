@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+<!-- Escribe una función que reciba 3 números del usuario y muestre
+El promedio de los números en alerta.
+Muestre el promedio de los números en un párrafo con un id llamado “myp” usyo getElementById.
+Llama a las funciones al presionar un botón.  -->
+
+<h1>Promedio de los números</h1>
+<p id=" myp"></p>
+<input type="text" id="myp1" placeholder="print number"><br/>
+<input type="text" id="myp2" placeholder="print number"><br/>
+<input type="text" id="myp3" placeholder="print number"><br/>
+<button onclick="promedio()">Promedio</button>
+
+<script>
+let promedio = () => {
+        let x1 = document.getElementById("myp1").value;
+        let x2 = document.getElementById("myp2").value;
+        let x3 = document.getElementById("myp3").value; 
+        let promedio = (parseInt(x1) + parseInt(x2) + parseInt(x3)) / 3;
+        alert(promedio); 
+    }
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+
+<style>
+.box{
+    width: 20%;
+    height: 150px;
+    border:3px solid blue;
+    text-align: center;
+    padding:5px;
+    font-size: 100px;
+    margin-left: 40%;
+    margin-top:10%;
+}
+</style>
+</head>
+
+<body>
+<!-- Crea una página html
+Crea un div con un id llamado “num” con 20% de ancho y 200px de alto con un marco azul en el cual dentro de él, estará escrito el número 0
+image
+Escribe una función llamada ryomNumber que genere un número entre 0 y 100. La función va a poner el número dentro del div  con el  id llamado num
+Hacerle click al div va a activar la función ryomNumber. -->
+
+<div id="num" class="box">0
+    <br>
+    <button onclick="ryomNumber()">Generar número</button>
+</div>
+
+    <script>
+     let ryomNumber = () => {
+        let x = Math.random() * 100;
+        x = Math.floor(x);
+        document.getElementById("num").innerHTML = x
+
+     }
+    </script>
+</body>
+</html>

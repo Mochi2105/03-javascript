@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 </title>
+</head>
+
+<body>
+    <!-- Agrega un botón con la leyenda “suma de 5 números”.
+a. Agrega un párrafo con el id="sum".
+b. Escribe un script que reciba 5 números de la ventana emergente.
+c. El script va a calcular la suma de los números.
+d. El script mostrará la suma de los números en el párrafo con id="details".
+e. Invoca las funciones al pulsar el botón. -->
+
+<h1>For Loops - Acumuladores</h1>
+<button onclick="calcularSuma()">Suma de cinco números</button>
+<p id="output"></p>
+
+    <script>
+        
+        const calcularSuma = () => {
+            let suma = 0;
+
+            for (let i = 0; i < 5; i++) {
+                console.log(suma);
+                let inputData = prompt(`Por favor ingrese el ${i + 1} digito`);
+                let numberInputData = parseInt(inputData);
+
+                console.log(typeof(numberInputData));
+                console.log(isNaN(numberInputData));
+
+                if(isNaN(numberInputData)) {
+                    alert("Solo se permiten numeros, intente de nuevo");
+                    i--;
+                }else{
+                    suma += numberInputData;
+                    console.log(suma);
+                }
+            }
+                document.getElementById("output").innerHTML = "Suma Total: " + suma;
+        }
+    </script>
+</body>
+</html>

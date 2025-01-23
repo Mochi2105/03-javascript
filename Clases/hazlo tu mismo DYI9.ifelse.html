@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <!-- Escribe un programa que reciba input del usuario y te avise si el número es divisible entre 2. -->
+    <h2>Número divisible para 2 (Módulo 0) </h2>
+    <input type="text" id="num1" placeholder="print number"><br />
+    <button onclick="resul()">Click me</button>
+
+    <script>
+        let resul = () => {
+            let x = parseInt(document.getElementById("num1").value);
+            let resid = x % 2; 
+            if (resid == 0 ) {
+                alert(x + " es divisible para dos ");
+            } 
+            else {
+                alert (x + " no es divisible para dos " );
+            }
+        }
+</script>
+</body>
+</html>

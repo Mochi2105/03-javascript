@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+<!-- Escribe un programa que reciba el “número de la suerte” del usuario.
+Si el número de la suerte es 7, alerta "1,000,000$” -->
+
+<h2>Número de la suerte</h2>
+<input type="text" id="num1" placeholder="print number"><br />
+<button onclick="resul()">Click me</button>
+
+<script>
+
+let resul = () => {
+    let x = parseInt(document.getElementById("num1").value);
+            if ( x == 7 ) {
+                alert(" Ganaste $1.000.000 " );
+            } 
+            else {
+                alert(" Vuelve a intentar " );
+            }
+}
+
+</script>
+</body>
+</html>

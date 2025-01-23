@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Estoy aprendiendo Js</h1>
+     <button onclick="pantalla()">Click para cambiar el color</button>
+     <p id="num1">0</p>
+<script>
+
+    // ejemplo para cambiar colores
+
+    let pantalla = () => {
+    let n = Math.random() * 100;
+    n = Math.floor(n);
+    document.getElementById("num1").innerText = n;
+    if (n > 0 && n < 30) {
+        document.body.style.backgroundColor="red";
+    }
+    if (n >= 30 && n < 60) {
+    document.body.style.backgroundColor="blue";
+    }
+    if (n >= 60) {
+    document.body.style.backgroundColor="pink";
+    }
+    }
+</script>
+</body>
+</html>
